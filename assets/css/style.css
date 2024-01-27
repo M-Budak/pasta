@@ -1064,7 +1064,6 @@ section {
   transition: 0.3s;
   color: #fff;
   border-radius: 0;
-  border-right: 2px solid var(--primary_color);
   font-weight: 600;
   font-size: 15px;
 }
@@ -1074,7 +1073,7 @@ section {
 }
 
 .specials .nav-link.active {
-  color: var(--background_color);
+  color: white;
   background: var(--primary_color);
   border-color: var(--primary_color);
 }
