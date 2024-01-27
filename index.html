@@ -222,7 +222,7 @@
           <div class="col-lg-6 menu-item filter-sade">
             <img src="assets/img/menu/parmesanli.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Fettucine Alfredo Big 200 gr</a><span>89 TL</span>
+              <a href="#">Fettucine Alfredo 200 gr</a><span>89 TL</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -914,12 +914,12 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Spesiyaller</h4>
+            <h4>Diğer Sayfalar</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#tab-1">Pesto Soslu</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#tab-2">Deniz Mahsüllü</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#gallery">Galeri</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#" class="modal-link">Franchise</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#preloader" class="modal-link">Franchise</a></li>
               <!-- <li><i class="bx bx-chevron-right"></i> <a href="#">Sit, illum</a></li> -->
             </ul>
           </div>
@@ -1022,18 +1022,27 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <script>
-    // Modal'ı açan link için tıklama olayını dinleyen JavaScript kodu
-    document.querySelector('.modal-link').addEventListener('click', function() {
-      var franchiseContent = document.getElementById('franchiseContent').innerHTML;
-      document.getElementById('franchiseModalContent').innerHTML = franchiseContent;
-      document.getElementById('franchiseModal').style.display = 'block';
-    });
 
-    // Modal'ı kapatan "X" simgesine tıklama olayını dinleyen JavaScript kodu
-    document.querySelector('.close-modal').addEventListener('click', function() {
-      document.getElementById('franchiseModal').style.display = 'none';
-    });
+    // Her iki bağlantı için de aynı olay dinleyicisi
+document.querySelectorAll('.modal-link').forEach(function(link) {
+  link.addEventListener('click', function() {
+    // Ortak modal içeriğini yükle
+    var franchiseContent = document.getElementById('franchiseContent').innerHTML;
+    document.getElementById('franchiseModalContent').innerHTML = franchiseContent;
+
+    // Ortak modalı aç
+    document.getElementById('franchiseModal').style.display = 'block';
+  });
+});
+
+// Modal'ı kapatan "X" simgesine tıklama olayını dinleyen JavaScript kodu
+document.querySelector('.close-modal').addEventListener('click', function() {
+  document.getElementById('franchiseModal').style.display = 'none';
+});
+
+
   </script>
+
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
