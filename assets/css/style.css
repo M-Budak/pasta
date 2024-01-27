@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 60%;
+  max-width: 80%; /* Maksimum genişlik ayarı */
   position: relative;
 }
 
@@ -236,6 +236,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .close-modal:hover {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-content {
+    margin: 10% auto;
+    padding: 2px;
+    max-width: 100%; /* Maksimum genişlik ayarı */
+  }
+  .modal{
+    margin-top: 15%;
+    width: 100%;
+  }
 }
 
 
