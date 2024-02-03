@@ -126,6 +126,7 @@
               <img src="assets/img/about-bg1.jpg" alt="">
             </div>
           </div>
+
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>İtalyanca kökenli "Fresco" kelimesi, taze ve tazelik anlamını taşırken, "Sinfonia" kelimesi ise müzik ve uyum anlamına gelir.</h3>
             <p class="fst-italic">
@@ -152,6 +153,9 @@
         <div class="section-title">
           <h2>Perché noi</h2>
           <p>Neden Fresco Sinfonia Pasta</p>
+          <div data-sheetdb-url="https://sheetdb.io/api/v1/e0grs9ahp7dsn" data-sheetdb-search="id=1" >  
+            <p>{{menu}}</p>
+          </div>
         </div>
 
         <div class="row">
@@ -444,6 +448,7 @@
 
 
 
+
         </div>
 
       </div>
@@ -484,6 +489,7 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Tavuk Mantar Pesto Soslu Makarna</h3>
+
                     <p class="fst-italic">Sofistike lezzetlerin dansı Fresco Sinfonia'da buluşuyor! Tavuk Mantar Pesto Soslu Makarna ile gastronomiye unutulmaz bir nota ekleyin. İncecik doğranmış tavuk, taptaze mantarlar ve nefis pesto sos, her bir ısırıkta damaklarınızı kucaklayacak. Bu özel lezzet, zarif bir melodiye dönüşüyor, sizi bir İtalyan rüyasına davet ediyor.</p>
                     <p>Fresco Sinfonia'nın özel menülerinden biri olan bu lezzet şöleni, makarna tutkunlarını mest edecek. Bu enfes lezzeti keşfetmeye hazır mısınız?</p>
                   </div>
@@ -1023,8 +1029,9 @@ Başarılar.
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <script>
+  <script src="https://sheetdb.io/handlebars.js"></script>
 
+  <script>
     // Her iki bağlantı için de aynı olay dinleyicisi
 document.querySelectorAll('.modal-link').forEach(function(link) {
   link.addEventListener('click', function() {
@@ -1041,8 +1048,6 @@ document.querySelectorAll('.modal-link').forEach(function(link) {
 document.querySelector('.close-modal').addEventListener('click', function() {
   document.getElementById('franchiseModal').style.display = 'none';
 });
-
-
   </script>
 
 
