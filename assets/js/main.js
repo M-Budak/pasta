@@ -4,6 +4,26 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ'
+let SHEET_TITLE = 'Database'
+let SHEET_RANGE = 'A1:D24'
+let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+fetch(FULL_URL)
+.then(res => res.text())
+.then(rep => {
+    let data = JSON.parse(rep.substr(47).slice(0,-2));
+    console.log(rep)
+
+    let menu = document.getElementById('menu');
+    let desc = document.getElementById('desc');
+
+    menu.innerHTML = data.table.rows[1].c[1].v;
+    desc.innerHTML = data.table.rows[2].c[2].v;
+})
+
+
 (function() {
   "use strict";
 
