@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.jpeg" rel="icon">
+  <link href="assets/img/favicon.jpeg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -54,7 +54,7 @@
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html">Fresco Makarna</a></h1>
+      <h1 class="me-auto me-lg-0"><a href="index.html"><img src="assets/img/logo.svg" alt="" style="height:120px; margin:-60px 0px -60px -10px;" ></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -123,15 +123,15 @@
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="about-img">
-              <img src="assets/img/about-bg1.jpg" alt="">
+              <img src="assets/img/about-bg-1.jpg" alt="">
             </div>
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3>İtalyanca kökenli "Fresco" kelimesi, taze ve tazelik anlamını taşırken, "Sinfonia" kelimesi ise müzik ve uyum anlamına gelir.</h3>
+            <h3>İtalyanca kökenli Fresco kelimesi, taze ve tazelik anlamını taşırken, <br> Sinfonia kelimesi ise müzik ve uyum anlamına gelir.</h3>
             <p class="fst-italic">
               <br>
-              Biz, her bir makarnanın doğadan, aşktan ve lezzetten ilham aldığına inanıyoruz. Her bir malzemeyi, özenle seçer ve en taze ve kaliteli olanları kullanırız. Baharatların doğal güzelliği, makarnalarımızın temelini oluşturur.
+              Fresco Sinfonia, her bir makarnanın doğadan, aşktan ve lezzetten ilham aldığına inanır. Her malzemeyi özenle seçer ve en taze, en kaliteli olanları kullanırız. Baharatların doğal güzelliği, makarnalarımızın temelini oluşturur. İtalyan kültürünü yansıtan bu lezzet yolculuğuna siz de katılın.
             </p>
             <!-- <ul>
               <li><i class="bi bi-check-circle"></i> El yapımı makarnalarımız, Fresco Sinfonia Pasta, bu el yapımı inceliklerin bir yansımasıdır.</li>
@@ -153,9 +153,6 @@
         <div class="section-title">
           <h2>Perché noi</h2>
           <p>Neden Fresco Sinfonia Pasta</p>
-          <div data-sheetdb-url="https://sheetdb.io/api/v1/e0grs9ahp7dsn" data-sheetdb-search="id=1" >  
-            <p>{{price}}</p>
-          </div>
         </div>
 
         <div class="row">
@@ -166,7 +163,6 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="100">
               <span>01</span>
               <h4>El Yapımı Makarna</h4>
-              <div id="menu"></div>
               <p>Aşkla ve özenle hazırlanan her bir tel, şefin ellerinde şekillenir, her tabak bir sanat eseri gibi özenle sunulur.</p>
             </div>
           </div>
@@ -183,6 +179,8 @@
             <div class="box" data-aos="zoom-in" data-aos-delay="300">
               <span>03</span>
               <h4>Aşk ve Lezzetin Uyumu</h4>
+              <br>
+              
               <p>Fresco Sinfonia Pasta, sadece makarna sunmaz, aynı zamanda bir aşkın ve lezzetin hikayesini paylaşır. </p>
             </div>
           </div>
@@ -199,8 +197,6 @@
         <div class="section-title">
           <h2>Menù</h2>
           <p>Menüye Göz Gezdirin</p>
-          
-          <div id="desc"></div>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -221,8 +217,9 @@
           <div class="col-lg-6 menu-item filter-sade">
             <img src="assets/img/menu/parmesanli.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Fettucine Alfredo 140 gr</a><span>79 TL</span>
+              <a href="#">Fettucine Alfredo 140 gr</a><span id="alfredoSpan">88 TL</span>
             </div>
+            
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
             </div>
@@ -231,7 +228,7 @@
           <div class="col-lg-6 menu-item filter-sade">
             <img src="assets/img/menu/parmesanli.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Fettucine Alfredo 200 gr</a><span>89 TL</span>
+              <a href="#">Fettucine Alfredo 200 gr</a><span>TL</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -239,7 +236,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/cake.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/pestosos.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Tavuk Mantar Pesto Sos</a><span>40 TL</span>
             </div>
@@ -249,7 +246,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/caesar.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/denizmahsul.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Sirena Deniz Mahsülü </a><span>45 TL</span>
             </div>
@@ -259,7 +256,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/biberli.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Tavuk & Renkli Biber</a><span>35 TL</span>
             </div>
@@ -269,7 +266,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/arrabiata.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Sugo All'arrabiata</a><span>30 TL</span>
             </div>
@@ -279,7 +276,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/napoletana.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Ragu Alla Napoletana</a><span>30 TL</span>
             </div>
@@ -289,7 +286,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/bolognese.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Ragu Alla Bolognese</a><span>35 TL</span>
             </div>
@@ -299,7 +296,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/antrikot.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Fresco Dana Füme Et</a><span>40 TL</span>
             </div>
@@ -309,7 +306,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sos">
-            <img src="assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/babymozarella.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Baby Mozzarella</a><span>35 TL</span>
             </div>
@@ -319,7 +316,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-ekstra">
-            <img src="assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/parmesan.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Parmesan Peyniri</a><span>15 TL</span>
             </div>
@@ -329,9 +326,9 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-ekstra">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/truf.png" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Türüf Yağı</a><span>15 TL</span>
+              <a href="#">Trüf Yağı</a><span>15 TL</span>
             </div>
             <!-- <div class="menu-ingredients">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dicta dolor tempora. Nemo?
@@ -339,7 +336,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-ekstra">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/cheddar.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Cheddar Şırınga</a><span>20 TL</span>
             </div>
@@ -349,7 +346,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/cola.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Coca Cola / Fanta</a><span>35 TL</span>
             </div>
@@ -358,7 +355,7 @@
             </div> -->
           </div>
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/fuse-tea.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Ice Tea</a><span>35 TL</span>
             </div>
@@ -368,7 +365,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/sprite.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Sprite Gazoz</a><span>35 TL</span>
             </div>
@@ -378,7 +375,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/meyve.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Meyve Suyu</a><span>35 TL</span>
             </div>
@@ -388,7 +385,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/soda.webp" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Soda</a><span>25 TL</span>
             </div>
@@ -398,7 +395,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/ayran.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Ayran</a><span>15 TL</span>
             </div>
@@ -408,7 +405,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-soguk">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/su.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Su</a><span>15 TL</span>
             </div>
@@ -418,7 +415,7 @@
           </div>
 
           <div class="col-lg-6 menu-item filter-sicak">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/espresso.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Coffee Italy</a><span>40 TL</span>
             </div>
@@ -428,7 +425,7 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-sicak">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/turkish-coffe.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Türk Kahvesi</a><span>35 TL</span>
             </div>
@@ -438,7 +435,7 @@
           </div>
           
           <div class="col-lg-6 menu-item filter-sicak">
-            <img src="assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+            <img src="assets/img/menu/cay.png" class="menu-img" alt="">
             <div class="menu-content">
               <a href="#">Çay</a><span>15 TL</span>
             </div>
@@ -446,12 +443,6 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dicta dolor tempora. Nemo?
             </div> -->
           </div>
-
-
-
-
-
-
 
 
         </div>
@@ -495,8 +486,7 @@
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Tavuk Mantar Pesto Soslu Makarna</h3>
 
-                    <p class="fst-italic">Sofistike lezzetlerin dansı Fresco Sinfonia'da buluşuyor! Tavuk Mantar Pesto Soslu Makarna ile gastronomiye unutulmaz bir nota ekleyin. İncecik doğranmış tavuk, taptaze mantarlar ve nefis pesto sos, her bir ısırıkta damaklarınızı kucaklayacak. Bu özel lezzet, zarif bir melodiye dönüşüyor, sizi bir İtalyan rüyasına davet ediyor.</p>
-                    <p>Fresco Sinfonia'nın özel menülerinden biri olan bu lezzet şöleni, makarna tutkunlarını mest edecek. Bu enfes lezzeti keşfetmeye hazır mısınız?</p>
+                    <p class="fst-italic">İncecik doğranmış tavuk, taptaze mantarlar ve nefis pesto sos, her bir çatalda damaklarınızı kucaklayacak. Bu özel lezzet sizi bir İtalyan rüyasına davet ediyor.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/menu/pesto.png" alt="" class="img-fluid">
@@ -507,8 +497,7 @@
                 <div class="row">
                   <div class="col-lg-8 details order-2 order-lg-1">
                     <h3>Sirena Deniz Mahsülü</h3>
-                    <p class="fst-italic">Denizin derinliklerinden gelen bir başyapıt: Sirena Deniz Mahsülü. Fresco Sinfonia'nın özenle hazırladığı bu menü, taze deniz ürünlerinin eşsiz uyumunu sunuyor. Karides, kalamar, midye ve daha fazlası, bir araya gelerek enfes bir deniz tatlılığı yaratıyor. Bu muazzam lezzet, her ısırıkta sizi denizin büyülü dünyasına götürecek. Deniz rüzgarlarının esintisi, deniz mahsüllerinin mükemmel uyumuyla birleşiyor.</p>
-                    <p>Fresco Sinfonia'nın Sirena Deniz Mahsülü menüsü ile sıra dışı bir deneyim yaşamaya hazır olun. Bu lezzet yolculuğunda, damaklarınıza unutulmaz bir serenat sunuyoruz.</p>
+                    <p class="fst-italic">Fresco Sinfonia'nın Sirena Deniz Mahsülü menüsü ile sıra dışı bir deneyim yaşamaya hazır olun. Bu lezzet yolculuğunda, damaklarınıza unutulmaz bir serenat sunuyoruz.</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
                     <img src="assets/img/menu/deniz.png" alt="" class="img-fluid">
@@ -664,15 +653,6 @@ Başarılar.
       <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row g-0">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
@@ -698,6 +678,14 @@ Başarılar.
           </div>
 
           <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
               <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
                 <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
@@ -727,7 +715,7 @@ Başarılar.
                 <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
               </a>
             </div>
-          </div>
+          </div> -->
 
         </div>
 

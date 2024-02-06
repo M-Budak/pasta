@@ -5,26 +5,46 @@
 * License: https://bootstrapmade.com/license/
 */
 
-let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ'
-let SHEET_TITLE = 'Database'
-let SHEET_RANGE = 'A1:D24'
-let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
+
+
+(function() 
+
+{
+  let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ'
+  let SHEET_TITLE = 'Database'
+  let SHEET_RANGE = 'A1:D24'
+  let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
 
 fetch(FULL_URL)
 .then(res => res.text())
 .then(rep => {
     let data = JSON.parse(rep.substr(47).slice(0,-2));
     console.log(rep)
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log(data.table.rows[1].c[1].v); // Veriyi konsol üzerinde kontrol et
+      let alfredoValue = data.table.rows[1].c[1].v; // Alfredo'nun değerini sakla
+      let alfredoElement = document.getElementById('alfredo');
+      alfredoElement.innerHTML = alfredoValue; // HTML içeriğini güncelle
+    });
+    
+    
 
-    let menu = document.getElementById('menu');
     let desc = document.getElementById('desc');
+    let Grid = document.getElementById('Grid');
+    let length = data.table.rows.length-1;
 
-    menu.innerHTML = data.table.rows[1].c[1].v;
     desc.innerHTML = data.table.rows[2].c[2].v;
-})
 
+    for(let i = 0; i<length;i++){
+        let NewMenu = document.createElement('div');
+        NewMenu.id = ("box"+i);
+        NewMenu.className = "somestyle";
+        menu.append(NewMenu);
 
-(function() {
+        NewMenu.innerHTML = data.table.rows[i].c[1].v;
+    }
+});
+
   "use strict";
 
   /**
