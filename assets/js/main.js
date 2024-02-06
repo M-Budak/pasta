@@ -33,7 +33,7 @@ fetch(FULL_URL)
     let Grid = document.getElementById('Grid');
     let length = data.table.rows.length-1;
 
-    desc.innerHTML = data.table.rows[2].c[2].v;
+    desc.innerHTML = data.table.rows[3].c[3].v + " TL";
 
     for(let i = 0; i<length;i++){
         let NewMenu = document.createElement('div');
