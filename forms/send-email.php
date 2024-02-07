@@ -1,20 +1,42 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require 'PHPMailer-master/PHPMailer.php';
+require 'PHPMailer-master/SMTP.php';
+require 'PHPMailer-master/Exception.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = 'frescosinfoniapasta@gmail.com'; // Alıcı e-posta adresi
+    $name = $_POST['name'];
+    $email = $_POST['email'];
     $subject = $_POST['subject'];
-    $message = "Ad Soyad: " . $_POST['name'] . "\n";
-    $message .= "E-posta: " . $_POST['email'] . "\n";
-    $message .= "Mesaj: " . $_POST['message'];
+    $message = $_POST['message'];
 
-    $headers = "From: " . $_POST['email'];
+    $mail = new PHPMailer(true);
 
-    // E-postayı gönder
-    if (mail($to, $subject, $message, $headers)) {
-        echo "E-posta başarıyla gönderildi.";
-    } else {
-        echo "E-posta gönderilemedi. Lütfen daha sonra tekrar deneyin.";
+    try {
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.example.com'; // SMTP sunucu adresi
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'your_username'; // SMTP kullanıcı adı
+        $mail->Password   = 'your_password'; // SMTP şifre
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port       = 587;
+
+        $mail->setFrom($email, $name);
+        $mail->addAddress('recipient@example.com', 'Recipient Name'); // Alıcı e-posta adresi
+
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body    = $message;
+
+        $mail->send();
+        echo 'Your message has been sent. Thank you!';
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
     }
 } else {
-    echo "Geçersiz istek.";
+    echo 'Invalid request.';
 }
 ?>

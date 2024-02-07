@@ -813,12 +813,14 @@ Başarılar.
 
           </div>
 
-          <div class="col-lg-8 mt-5 mt-lg-0">
+          <div class="col-lg-8 mt-5 mt-lg-0" >
 
-            <!-- <form action="forms/contact.php" method="post" role="form" > -->
-            <form action="/forms/send-email.php" method="post" role="form" class="php-email-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <div class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
+                  <input type="hidden" name="access_key" value="d03719b2-ae0b-4c2e-a12a-49330cf04e09"> 
+                  <input type="hidden" name="from_name" value="Müsteriden Mesaj Var!">       
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ad Soyad" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
@@ -837,6 +839,7 @@ Başarılar.
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Gönder</button></div>
+            </div>
             </form>
 
           </div>
@@ -960,9 +963,13 @@ Başarılar.
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Bizimle Çalışmak İster misiniz?</h4>
             <p>Fresco Sinfonia ailesine katılmak istiyorsanız lütfen aşağıdaki alanı doldurun</p>
-            <form action="" method="post">
+            
+            <form action="https://api.web3forms.com/submit" method="POST">
               <div class="phone-input-container">
                 <span>+90</span>
+                <input type="hidden" name="access_key" value="d03719b2-ae0b-4c2e-a12a-49330cf04e09"> 
+                <input type="hidden" name="from_name" value="Eleman Başvurusu">
+                <input type="hidden" name="subject" value="Bir kişi telefonunu bıraktı">
                 <input type="tel" name="phone" id="phone" required pattern="\d*" maxlength="10">
               </div>
               <input type="submit" value="Başvur">
