@@ -26,23 +26,23 @@ fetch(FULL_URL)
       let alfredoElement = document.getElementById('alfredo');
       alfredoElement.innerHTML = alfredoValue; // HTML içeriğini güncelle
     });
+
+    const items = ['alfredo_small', 'alfredo_big', 'pesto', 'deniz', 'renklibiber', 'arrabiata', 'napoletana', 'bolognese', 'danafume', 'mozzarella', 'parmesan', 'truf', 'cheddar', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'coffee', 'turkkahvesi', 'cay'];
+
+for (let i = 0; i < items.length; i++) {
+    let element = document.getElementById(items[i]);
+    element.innerHTML = data.table.rows[i].c[3].v + " TL";
+}
     
-    
 
-    let desc = document.getElementById('desc');
-    let Grid = document.getElementById('Grid');
-    let length = data.table.rows.length-1;
+    // for(let i = 0; i<length;i++){
+    //     let NewMenu = document.createElement('div');
+    //     NewMenu.id = ("box"+i);
+    //     NewMenu.className = "somestyle";
+    //     menu.append(NewMenu);
 
-    desc.innerHTML = data.table.rows[3].c[3].v + " TL";
-
-    for(let i = 0; i<length;i++){
-        let NewMenu = document.createElement('div');
-        NewMenu.id = ("box"+i);
-        NewMenu.className = "somestyle";
-        menu.append(NewMenu);
-
-        NewMenu.innerHTML = data.table.rows[i].c[1].v;
-    }
+    //     NewMenu.innerHTML = data.table.rows[i].c[1].v;
+    // }
 });
 
   "use strict";
