@@ -800,13 +800,13 @@ Başarılar.
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>bilgi@frescosinfoniamakarna.com</p>
+                <p><a class="contact-link" href="mailto:frescosinfoniapasta@gmail.com">frescosinfoniapasta@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Telefon:</h4>
-                <p>0256 559 44 33</p>
+                <p><a class="contact-link" href="tel:+905423169332">0542 316 93 32</a></p>
               </div>
 
             </div>
@@ -815,7 +815,8 @@ Başarılar.
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <!-- <form action="forms/contact.php" method="post" role="form" > -->
+            <form action="/forms/send-email.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ad Soyad" required>

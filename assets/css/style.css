@@ -1505,6 +1505,11 @@ section {
   width: 100%;
 }
 
+.contact-link {
+  color: inherit; /* Mevcut renk kullanılsın */
+  text-decoration: none; /* Altçizgi kaldırılsın */
+}
+
 .contact .info i {
   font-size: 20px;
   float: left;
