@@ -901,9 +901,12 @@ Başarılar.
               <p>Franchise Başvuru Formu</p>
             </div>
     
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="https://api.web3forms.com/submit" method="POST" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row">
                 <div class="col-lg-4 col-md-6 form-group">
+                  <input type="hidden" name="access_key" value="d03719b2-ae0b-4c2e-a12a-49330cf04e09"> 
+                  <input type="hidden" name="from_name" value="Franchise Mesajı">
+                <input type="hidden" name="subject" value="Franchise Formundan Mesaj Var">
                   <input type="text" name="name" class="form-control" id="name" placeholder="İsim Soyisim" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                   <div class="validate"></div>
                 </div>
