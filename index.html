@@ -206,7 +206,7 @@
     <section id="menu" class="menu section-bg">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
+        <div class="section-title" id="tummenu">
           <h2>Menù</h2>
           <p>Menüye Göz Gezdirin</p>
         </div>
@@ -229,7 +229,7 @@
           <div class="col-lg-6 menu-item filter-sade">
             <img src="assets/img/menu/alfredo_small.webp" class="menu-img" alt="">
             <div class="menu-content">
-                <a href="#">Fettucine Alfredo 140 gr</a><span id="alfredo_small"></span>
+                <a href="#tummenu">Fettucine Alfredo 140 gr</a><span id="alfredo_small"></span>
             </div>
             <div class="menu-ingredients">
               El Açması Taze Hamur ve Lezzetli Parmesan Peyniri
@@ -239,7 +239,7 @@
           <div class="col-lg-6 menu-item filter-sade">
             <img src="assets/img/menu/alfredo_big.webp" class="menu-img" alt="">
             <div class="menu-content">
-                <a href="#">Fettucine Alfredo 200 gr</a><span id="alfredo_big"></span>
+                <a href="#alfredo_small">Fettucine Alfredo 200 gr</a><span id="alfredo_big"></span>
             </div>
             <div class="menu-ingredients">
               El Açması Taze Hamur ve Lezzetli Parmesan Peyniri
@@ -249,7 +249,7 @@
           <div class="col-lg-6 menu-item filter-sos">
             <img src="assets/img/menu/pestosos.webp" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Tavuk Mantar Pesto Sos</a><span id="pesto"></span>
+              <a href="#alfredo_big">Tavuk Mantar Pesto Sos</a><span id="pesto"></span>
             </div>
             <div class="menu-ingredients">
               Tavuk Orman Mantarı Fresco Pesto Sos Parmesan
@@ -259,7 +259,7 @@
           <div class="col-lg-6 menu-item filter-sos">
             <img src="assets/img/menu/denizmahsul.webp" class="menu-img" alt="">
             <div class="menu-content">
-              <a href="#">Sirena Deniz Mahsülü </a><span id="deniz" ></span>
+              <a href="#pesto">Sirena Deniz Mahsülü </a><span id="deniz"></span>
             </div>
             <div class="menu-ingredients">
               Karides-Midye-Kalamar Rende Parmesan <br>  *Cumartesi Günleri Servis Edilir 
@@ -269,7 +269,7 @@
           <div class="col-lg-6 menu-item filter-sos">
             <img src="assets/img/menu/biberli.webp" class="menu-img" alt="">
             <div class="menu-content">
-                <a href="#">Tavuk & Renkli Biber</a><span id="renklibiber"></span>
+                <a href="#deniz">Tavuk & Renkli Biber</a><span id="renklibiber"></span>
             </div>
             <div class="menu-ingredients">
                 Marine Tavuk Kapya Biber Parmesan
@@ -279,7 +279,7 @@
           <div class="col-lg-6 menu-item filter-sos">
             <img src="assets/img/menu/arrabiata.webp" class="menu-img" alt="">
             <div class="menu-content">
-                <a href="#">Sugo All'arrabiata</a><span id="arrabiata"></span>
+                <a href="#renklibiber">Sugo All'arrabiata</a><span id="arrabiata"></span>
             </div>
             <div class="menu-ingredients">
                 Fresco Domates Sos Arnavut Biber Siyah Zeytin Parmesan
@@ -289,7 +289,7 @@
           <div class="col-lg-6 menu-item filter-sos">
           <img src="assets/img/menu/napoletana.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Ragu Alla Napoletana</a><span id="napoletana"></span>
+              <a href="#arrabiata">Ragu Alla Napoletana</a><span id="napoletana"></span>
           </div>
           <div class="menu-ingredients">
               Fresco Domates Sos Parmesan
@@ -299,7 +299,7 @@
           <div class="col-lg-6 menu-item filter-sos">
           <img src="assets/img/menu/bolognese.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Ragu Alla Bolognese</a><span id="bolognese"></span>
+              <a href="#napoletana">Ragu Alla Bolognese</a><span id="bolognese"></span>
           </div>
           <div class="menu-ingredients">
               Özel Sinfonia Bolognese Sos Parmesan
@@ -309,7 +309,7 @@
           <div class="col-lg-6 menu-item filter-sos">
           <img src="assets/img/menu/antrikot.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Fresco Dana Füme Et</a><span id="danafume"></span>
+              <a href="#bolognese">Fresco Dana Füme Et</a><span id="danafume"></span>
           </div>
           <div class="menu-ingredients">
               DRY Beef Kurutulmuş Antrikot Et
@@ -319,7 +319,7 @@
           <div class="col-lg-6 menu-item filter-sos">
           <img src="assets/img/menu/babymozarella.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Baby Mozzarella</a><span id="mozzarella"></span>
+              <a href="#danafume">Baby Mozzarella</a><span id="mozzarella"></span>
           </div>
           <div class="menu-ingredients">
               Krema Rüyası Mozzarella Peyniri Parmesan
@@ -329,35 +329,35 @@
           <div class="col-lg-6 menu-item filter-ekstra">
           <img src="assets/img/menu/parmesan.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Parmesan Peyniri</a><span id="parmesan"></span>
+              <a href="#mozzarella">Parmesan Peyniri</a><span id="parmesan"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-ekstra">
           <img src="assets/img/menu/truf.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Trüf Yağı</a><span id="truf"></span>
+              <a href="#parmesan">Trüf Yağı</a><span id="truf"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-ekstra">
           <img src="assets/img/menu/cheddar.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Cheddar Şırınga</a><span id="cheddar"></span>
+              <a href="#truf">Cheddar Şırınga</a><span id="cheddar"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/cola.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Coca Cola / Fanta</a><span id="cola"></span>
+              <a href="#cheddar">Coca Cola / Fanta</a><span id="cola"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/fuse-tea.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Ice Tea</a><span id="icetea"></span>
+              <a href="#cola">Ice Tea</a><span id="icetea"></span>
           </div>
           </div>
           <!-- Devam eden menü öğelerini ekleyin -->
@@ -365,21 +365,21 @@
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/sprite.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Gazoz</a><span id="gazoz"></span>
+              <a href="#icetea">Gazoz</a><span id="gazoz"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/meyve.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Meyve Suyu</a><span id="meyvesuyu"></span>
+              <a href="#gazoz">Meyve Suyu</a><span id="meyvesuyu"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/soda.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Soda</a><span id="soda"></span>
+              <a href="#meyvesuyu">Soda</a><span id="soda"></span>
           </div>
           <div class="menu-ingredients">
               Premium
@@ -389,14 +389,14 @@
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/ayran.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Ayran</a><span id="ayran"></span>
+              <a href="#soda">Ayran</a><span id="ayran"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-soguk">
           <img src="assets/img/menu/su.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Su</a><span id="su"></span>
+              <a href="#ayran">Su</a><span id="su"></span>
           </div>
           <div class="menu-ingredients">
               Premium
@@ -406,21 +406,21 @@
           <div class="col-lg-6 menu-item filter-sicak">
           <img src="assets/img/menu/turk-kahvesi.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Coffee İtaly</a><span id="coffee"></span>
+              <a href="#su">Coffee İtaly</a><span id="coffee"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-sicak">
           <img src="assets/img/menu/turkish-coffe.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Turk Kahvesi</a><span id="turkkahvesi"></span>
+              <a href="#coffee">Turk Kahvesi</a><span id="turkkahvesi"></span>
           </div>
           </div>
           
           <div class="col-lg-6 menu-item filter-sicak">
           <img src="assets/img/menu/cay.webp" class="menu-img" alt="">
           <div class="menu-content">
-              <a href="#">Çay</a><span id="cay"></span>
+              <a href="#turkkahvesi">Çay</a><span id="cay"></span>
           </div>
           </div>
           
