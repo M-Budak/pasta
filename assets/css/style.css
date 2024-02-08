@@ -1421,8 +1421,9 @@ section {
   margin-bottom: 20px;
   background: #343a40;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; 
 }
+
 
 .chefs .member .member-info {
   opacity: 0;
