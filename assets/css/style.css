@@ -259,7 +259,8 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid rgba(12, 11, 9, 0.6);
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding-top: 8px;
+  padding-bottom: 3px;
   top: 40px;
 }
 
@@ -286,6 +287,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo img {
   max-height: 40px;
+}
+
+.logofont{
+  font-family: 'Playball', cursive;
+  /* font-family: 'Dancing Script', cursive; */
+  font-size: 40px;
 }
 
 /*--------------------------------------------------------------
