@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geri Bildirim Formu</title>
+  <link rel="stylesheet" href="nps.css">
+</head>
+<body>
+  <form id="feedback-form" method="post" action="" name="nps-form">
+    <!-- Genel Deneyim -->
+    <fieldset>
+        <legend>Restoranımızdaki Genel deneyiminizi nasıl puanlarsınız?</legend>
+        <div class="rating">
+          <button type="button" class="rating-btn" data-value="1">1</button>
+          <button type="button" class="rating-btn" data-value="2">2</button>
+          <button type="button" class="rating-btn" data-value="3">3</button>
+          <button type="button" class="rating-btn" data-value="4">4</button>
+          <button type="button" class="rating-btn" data-value="5">5</button>
+        </div>
+        <p id="rating-warning" class="warning hidden">Lütfen genel deneyiminizi puanlayınız.</p> <!-- Uyarı Metni -->
+      </fieldset>
+
+    <!-- Lezzet -->
+<div class="criteria">
+    <span class="criteria-title">Lezzet:</span>
+    <div class="criteria-buttons">
+      <button type="button" name="Lezzet" class="criteria-btn" data-value="5">Mükemmel 😋</button>
+      <button type="button" name="Lezzet" class="criteria-btn" data-value="0">Geliştirilmeli 🤔</button>
+    </div>
+  </div>
+  
+  <!-- Ortam -->
+  <div class="criteria">
+    <span class="criteria-title">Ortam:</span>
+    <div class="criteria-buttons">
+      <button type="button" name="Ortam" class="criteria-btn" data-value="5">Keyifli 🎵</button>
+      <button type="button" name="Ortam" class="criteria-btn" data-value="0">Sıkıcı 😴</button>
+    </div>
+  </div>
+  
+  <!-- Personel -->
+  <div class="criteria">
+    <span class="criteria-title">Personel:</span>
+    <div class="criteria-buttons">
+      <button type="button" name="Personel" class="criteria-btn" data-value="5">Güler Yüzlü 😊</button>
+      <button type="button" name="Personel" class="criteria-btn" data-value="0">Somurtkan 😒</button>
+    </div>
+  </div>
+  
+  <!-- Servis -->
+  <div class="criteria">
+    <span class="criteria-title">Servis:</span>
+    <div class="criteria-buttons">
+      <button type="button" name="Servis" class="criteria-btn" data-value="5">Başarılı 👍</button>
+      <button type="button" name="Servis" class="criteria-btn" data-value="0">Daha İyi Olabilir 👎</button>
+    </div>
+  </div>
+  
+  <!-- Temizlik -->
+  <div class="criteria">
+    <span class="criteria-title">Temizlik:</span>
+    <div class="criteria-buttons">
+      <button type="button" name="Temizlik" class="criteria-btn" data-value="5">Pırıl pırıl ✨</button>
+      <button type="button" name="Temizlik" class="criteria-btn" data-value="0">İyileştirilebilir 🧹</button>
+    </div>
+  </div>  
+
+    <!-- Ekstra Düşünceler -->
+    <fieldset>
+      <legend>Eklemek İstedikleriniz Var mı?</legend>
+      <textarea placeholder="Düşüncelerinizi paylaşın" name="additional_thoughts"></textarea>
+    </fieldset>
+
+    <!-- Gönder Butonu -->
+    <button type="submit" class="submit-btn">Gönder</button>
+  </form>
+
+<!-- Success Pop-up -->
+<div id="success-popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Teşekkürler!</h2>
+      <p>Geri bildiriminiz için teşekkür ederiz.</p>
+      <button id="google-review-button" class="submit-btn hidden">Bizi Google'da Değerlendir! ⭐️</button>
+      <div class="button-container">
+        <button id="tekrar-degerlendir" class="submit-btn">Ankete Dön</button>
+        <button id="home-button" class="submit-btn">Ana Sayfa</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="nps.js"></script>
+</body>
+</html>
