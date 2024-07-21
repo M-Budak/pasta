@@ -10,30 +10,44 @@
 (function() 
 
 {
-  let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ'
-  let SHEET_TITLE = 'Database'
-  let SHEET_RANGE = 'A1:D24'
+  let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ';
+  let SHEET_TITLE = 'Database';
+  let SHEET_RANGE = 'A1:D29';
   let FULL_URL = ('https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?sheet=' + SHEET_TITLE + '&range=' + SHEET_RANGE);
-
-fetch(FULL_URL)
-.then(res => res.text())
-.then(rep => {
-    let data = JSON.parse(rep.substr(47).slice(0,-2));
-    console.log(rep)
-    document.addEventListener("DOMContentLoaded", function() {
-      console.log(data.table.rows[1].c[1].v); // Veriyi konsol üzerinde kontrol et
-      let alfredoValue = data.table.rows[1].c[1].v; // Alfredo'nun değerini sakla
-      let alfredoElement = document.getElementById('alfredo');
-      alfredoElement.innerHTML = alfredoValue; // HTML içeriğini güncelle
-    });
-
-    const items = ['alfredo_small', 'alfredo_big', 'pesto', 'deniz', 'renklibiber', 'arrabiata', 'napoletana', 'bolognese', 'danafume', 'mozzarella', 'parmesan', 'truf', 'cheddar', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'coffee', 'turkkahvesi', 'cay'];
-
-for (let i = 0; i < items.length; i++) {
-    let element = document.getElementById(items[i]);
-    element.innerHTML = data.table.rows[i].c[3].v + " TL";
-}
-    
+  
+  fetch(FULL_URL)
+  .then(res => res.text())
+  .then(rep => {
+      let data = JSON.parse(rep.substr(47).slice(0,-2));
+      console.log(rep);
+  
+      document.addEventListener("DOMContentLoaded", function() {
+          const items = ['alfredo_small', 'alfredo_big', 'pesto', 'tavukmantar', 'deniz', 'patlican', 'bolognese', 'renklibiber', 'arrabiata', 'napoletana', 'danafume', 'portofino', 'mozzarella', 'kurudomates', 'parmesan', 'truf', 'cheddar', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'turkkahvesi', 'cay', 'tatli'];
+  
+          for (let i = 0; i < items.length; i++) {
+              let item = items[i];
+  
+              // Menü adı
+              let nameElement = document.getElementById(item + '_name');
+              if (nameElement) {
+                  nameElement.innerHTML = data.table.rows[i].c[0].v;
+              }
+  
+              // Menü içeriği
+              let descriptionElement = document.getElementById(item + '_description');
+              if (descriptionElement) {
+                  descriptionElement.innerHTML = data.table.rows[i].c[1].v;
+              }
+  
+              // Menü fiyatı
+              let priceElement = document.getElementById(item + '_price');
+              if (priceElement) {
+                  priceElement.innerHTML = data.table.rows[i].c[3].v + " TL";
+              }
+          }
+      });
+  });
+  
 
     // for(let i = 0; i<length;i++){
     //     let NewMenu = document.createElement('div');
@@ -43,7 +57,7 @@ for (let i = 0; i < items.length; i++) {
 
     //     NewMenu.innerHTML = data.table.rows[i].c[1].v;
     // }
-});
+
 
   "use strict";
 
