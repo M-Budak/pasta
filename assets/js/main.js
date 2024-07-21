@@ -24,29 +24,34 @@
           let data = JSON.parse(jsonData);
           console.log(data); // JSON verisini kontrol etmek için
 
-          // Sadece alfredo_small öğesini işlemek için
-          let item = 'alfredo_small';
+          // İşlenecek item'ler listesi
+          const items = ['alfredo_small', 'alfredo_big', 'pesto', 'tavukmantar', 'deniz', 'patlican', 'bolognese', 'renklibiber', 'arrabiata', 'napoletana', 'danafume', 'portofino', 'mozzarella', 'kurudomates', 'parmesan', 'truf', 'cheddar', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'turkkahvesi', 'cay', 'tatli'];
 
-          // Menü adı
-          let nameElement = document.getElementById(item + '_name');
-          if (nameElement) {
-              nameElement.innerHTML = data.table.rows[0].c[1].v;
-          }
+          for (let i = 0; i < items.length; i++) {
+              let item = items[i];
 
-          // Menü içeriği
-          let descriptionElement = document.getElementById(item + '_description');
-          if (descriptionElement) {
-              descriptionElement.innerHTML = data.table.rows[0].c[2].v;
-          }
+              // Menü adı
+              let nameElement = document.getElementById(item + '_name');
+              if (nameElement) {
+                  nameElement.innerHTML = data.table.rows[i].c[1].v;
+              }
 
-          // Menü fiyatı
-          let priceElement = document.getElementById(item + '_price');
-          if (priceElement) {
-              priceElement.innerHTML = data.table.rows[0].c[3].v + " TL";
+              // Menü içeriği
+              let descriptionElement = document.getElementById(item + '_description');
+              if (descriptionElement) {
+                  descriptionElement.innerHTML = data.table.rows[i].c[2].v;
+              }
+
+              // Menü fiyatı
+              let priceElement = document.getElementById(item + '_price');
+              if (priceElement) {
+                  priceElement.innerHTML = data.table.rows[i].c[3].v + " TL";
+              }
           }
       })
       .catch(error => console.error('Error fetching data:', error));
   });
+
 
 
     // for(let i = 0; i<length;i++){
