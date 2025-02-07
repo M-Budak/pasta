@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(data); // JSON verisini kontrol etmek için
 
       // Item listesi
-      let items = ['alfredo_small', 'alfredo_big', 'pesto', 'tavukmantar', 'deniz', 'patlican', 'bolognese', 'renklibiber', 'arrabiata', 'napoletana', 'danafume', 'portofino', 'mozzarella', 'kurudomates', 'parmesan', 'truf', 'cheddar', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'turkkahvesi', 'cay', 'tatli'];
+      let items = ['alfredo_small', 'alfredo_big', 'tavukmantar', 'deniz', 'pesto', 'patlican', 'bolognese', 'renklibiber', 'arrabiata', 'napoletana', 'danafume', 'portofino', 'mozzarella', 'kurudomates', 'parmesan', 'truf', 'cheddar', 'limonata', 'cola', 'icetea', 'gazoz', 'meyvesuyu', 'soda', 'ayran', 'su', 'turkkahvesi', 'cay', 'tatli', 'tiramisu'];
 
       for (let i = 0; i < items.length; i++) {
           let item = items[i];

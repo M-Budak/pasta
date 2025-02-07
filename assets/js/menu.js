@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     let SHEET_ID = '1HHlDEC0XFvWjIrkWeBsEee4NsRR469msmezS69htQwQ';
     let SHEET_TITLE = 'Database';
-    let SHEET_RANGE = 'A1:D29';
+    let SHEET_RANGE = 'A1:D30';
     let FULL_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE}`;
 
     fetch(FULL_URL)
